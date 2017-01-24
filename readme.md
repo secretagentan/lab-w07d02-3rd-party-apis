@@ -1,4 +1,4 @@
-# 3rd Party APIs 
+# 👨‍👩‍👧 3rd Party APIs 
 
 Just as the browser can act as a client and make requests to the server,
 our server can act as a client and make requests.
@@ -9,6 +9,7 @@ can explore using the Node Request module to make requests to other web servers.
 # Setup
 
 ```
+$ npm init -f
 $ npm install --save request
 ```
 
@@ -52,7 +53,7 @@ Read each link to find how to construct a URL to make an API request.
 - https://api.github.com/users/yourusername
 - Use the request module to console.log your user info
 
-# Next Steps
+# ✨ Next Steps
 
 ## Requests in Express
 
