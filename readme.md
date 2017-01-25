@@ -74,8 +74,8 @@ the following requests.
 ## AJAX and Express
 
 When a user visits '/random' they should see buttons for "word" and "user"
-- [ ] When a user clicks on "word", use AJAX to get and render a random word from '/randomword'
-- [ ] When a user clicks on "user", use AJAX to get and render a random word from '/randomuser'
+- [x] When a user clicks on "word", use AJAX to get and render a random word from '/randomword'
+- [x] When a user clicks on "user", use AJAX to get and render a random word from '/randomuser'
 
 When a user visits '/game' they should see a button "Start"
 - [ ] When a user clicks "start", use AJAX to get and render the trivia questions from '/trivia'

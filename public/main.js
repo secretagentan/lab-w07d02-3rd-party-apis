@@ -2,17 +2,30 @@ console.log('hello meow');
 
 const $wordBtn = $('#word');
 const $userBtn = $('#user');
-const $newWord= $('.new-word');
-const $userDiv = $('.new-user');
+const $wordDiv = $('.new-word');
+const $userPar = $('.new-user');
 
 $wordBtn.on('click', function(evt) {
-  $.post('/randomword', function(res) {
-    // console.log(res);
-    $newWord.text(res);
-    // getData(res);
+  $.ajax({
+    url: '/randomword',
+    method: 'GET'
+  }).then(function(res) {
+    console.log(res);
+    $wordDiv.text(res);
   })
 })
 
-// function getData(data) {
-//   $newWord.text(data);
-// }
+$userBtn.on('click', function(evt) {
+  $.ajax({
+    url: '/randomuser',
+    method: 'GET'
+  }).then(function(res) {
+const firstName = res.name.first;
+const lastName = res.name.last;
+    const text = JSON.stringify(res);
+    console.log(text);
+    console.log(`${firstName} ${lastName}`);
+
+    $userPar.text(`${firstName} ${lastName}`);
+  })
+})
